@@ -1,0 +1,194 @@
+/* General Reset & Layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background-color: #fdf2f8; /* Soft pale pink background */
+    color: #4a3e43; /* Muted deep slate/rose text for high readability */
+    line-height: 1.6;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Header & Profile Picture */
+.profile-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ec4899; /* Vibrant pink accent border */
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.2);
+    margin-bottom: 15px;
+}
+
+.profile-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #831843; /* Deep burgundy/pink for primary header */
+    margin-bottom: 5px;
+}
+
+.profile-header p {
+    color: #9d5c75;
+    font-size: 1.05rem;
+}
+
+/* Card Boxes */
+.card {
+    background-color: #ffffff; /* Clean white card backgrounds */
+    border: 1px solid #fbcfe8; /* Soft pink border */
+    border-radius: 12px;
+    padding: 24px 28px;
+    box-shadow: 0 4px 12px rgba(236, 72, 153, 0.06);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    border-color: #ec4899;
+    box-shadow: 0 4px 20px rgba(236, 72, 153, 0.18);
+}
+
+.card h2 {
+    color: #db2777; /* Bright warm pink for section headings */
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.card p {
+    color: #4a3e43;
+    font-size: 0.95rem;
+}
+
+/* Custom Bullet Lists */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    color: #4a3e43;
+    font-size: 0.95rem;
+}
+
+ul li::before {
+    content: "•";
+    color: #ec4899;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+ul li:last-child {
+    margin-bottom: 0;
+}
+
+ul li strong {
+    color: #1f1116;
+}
+
+/* Certificate Hyperlinks */
+.cert-link {
+    color: #9333ea;
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-left: 6px;
+    transition: color 0.2s ease;
+}
+
+.cert-link:hover {
+    color: #7e22ce;
+    text-decoration: underline;
+}
+
+/* Skills Section Styling */
+.skill-group {
+    margin-bottom: 12px;
+}
+
+.skill-group:last-child {
+    margin-bottom: 0;
+}
+
+.skill-group strong {
+    color: #1f1116;
+}
+
+/* Projects Inner Card Styling */
+.project-item {
+    background-color: #fff5f8; /* Subtle light pink container for sub-items */
+    border: 1px solid #fce7f3;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 14px;
+}
+
+.project-item:last-child {
+    margin-bottom: 0;
+}
+
+.project-item h3 {
+    color: #be185d;
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+}
+
+.project-item p {
+    font-size: 0.9rem;
+    color: #6b515c;
+    margin-bottom: 10px;
+}
+
+.btn-github {
+    display: inline-block;
+    background-color: #ec4899;
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn-github:hover {
+    background-color: #db2777;
+}
+
+/* Contact Links Styling */
+.contact-subtext {
+    margin-bottom: 12px;
+    color: #6b515c;
+}
+
+.contact-list li a {
+    color: #be185d;
+    text-decoration: none;
+}
+
+.contact-list li a:hover {
+    text-decoration: underline;
+}
